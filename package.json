@@ -1,0 +1,39 @@
+{
+  "name": "@elfiner/stylelint",
+  "main": "index.js",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "tests-only": "ava ./test/test-*.js",
+    "travis": "npm run --silent test"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "stylelint": "^13.6.0",
+    "stylelint-scss": "^3.16.0",
+    "stylelint-order": "^4.0.0"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "ava": "0.23.0",
+    "eslint": "^3.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "stylelint": "8.2.0"
+  },
+  "keywords": [
+    "css",
+    "lint",
+    "stylelint"
+  ],
+  "files": [
+    "*.md",
+    "index.js"
+  ],
+  "peerDependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  }
+}
